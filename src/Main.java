@@ -7,6 +7,22 @@ class Student {
 }
 
 
+class Car{
+    String name;
+    String color;
+    String model;
+    Car(String name,String color,String model) { //No Return Type and the name will be class name
+        this.name = name;
+        this.color = color;
+        this.model = model;
+    }
+    void print(){
+        System.out.println(" Name:"+name + " Color:"+color + " Model:"+model);
+    }
+}
+
+
+
 
 public class Main {
     public static void main(String[] args) {
@@ -21,6 +37,8 @@ public class Main {
         s1.uni  = "King"; //changing the value using object
         System.out.println("New University Again:"+ Student.uni); //we can only use static things in the static function
 
+        Car s2 = new Car("Toyota","Black", "MK4");
+        s2.print();
 
         }
     }
